@@ -25,12 +25,9 @@ PAGES = {
     "o-nas": (3968, "O Nas", "/o-nas/"),
     "pomagam": (5259, "Jak Pomóc", "/pomagam/"),
     "zostan-wolontariuszem": (5496, "Zostań wolontariuszem!", "/zostan-wolontariuszem/"),
-    "warsztaty": (5968, "Warsztaty", "/warsztaty/"),
     "warunki-adopcji": (1519, "Warunki adopcji", "/warunki-adopcji/"),
     "kontakt": (1919, "Kontakt", "/kontakt/"),
     "dokumenty": (5702, "Dokumenty i Sprawozdania Roczne", "/dokumenty/"),
-    "regulamin-warsztatow": (5949, "Regulamin warsztatów", "/regulamin-warsztatow/"),
-    "standardy-ochrony-maloletnich": (5951, "Standardy Ochrony Małoletnich", "/standardy-ochrony-maloletnich/"),
     "polityka-prywatnosci": (644, "Polityka prywatności", "/polityka-prywatnosci/"),
 }
 

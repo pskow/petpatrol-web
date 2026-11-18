@@ -1,6 +1,6 @@
 # Wdrożenie nowej strony petpatrol.pl
 
-Całość składa się z trzech części: grafik w bibliotece mediów, trzech pól we wtyczce WPCode (wspólny wygląd, header, stopka) oraz jednego bloku HTML na każdej z 11 stron. Motywu Customify nie trzeba zmieniać ani wyłączać: nowy CSS sam chowa stary nagłówek, stopkę i panel boczny.
+Całość składa się z trzech części: grafik w bibliotece mediów, trzech pól we wtyczce WPCode (wspólny wygląd, header, stopka) oraz jednego bloku HTML na każdej z 8 stron. Motywu Customify nie trzeba zmieniać ani wyłączać: nowy CSS sam chowa stary nagłówek, stopkę i panel boczny.
 
 Podgląd wszystkich stron jest w folderze `podglad/`. Otwórz dowolny plik w przeglądarce, linki między stronami działają.
 
@@ -42,12 +42,9 @@ Dla każdej strony:
 | O Nas | `wordpress/strony/o-nas.html` |
 | Jak Pomóc | `wordpress/strony/pomagam.html` |
 | Zostań wolontariuszem! | `wordpress/strony/zostan-wolontariuszem.html` |
-| Warsztaty | `wordpress/strony/warsztaty.html` |
 | Warunki adopcji | `wordpress/strony/warunki-adopcji.html` |
 | Kontakt | `wordpress/strony/kontakt.html` |
 | Dokumenty i Sprawozdania Roczne | `wordpress/strony/dokumenty.html` |
-| Regulamin warsztatów | `wordpress/strony/regulamin-warsztatow.html` |
-| Standardy Ochrony Małoletnich | `wordpress/strony/standardy-ochrony-maloletnich.html` |
 | Polityka prywatności | `wordpress/strony/polityka-prywatnosci.html` |
 
 Wklejaj tylko w Edytorze kodu. Wklejony do zwykłego bloku „Własny HTML” plik zagnieździłby blok w bloku.
@@ -62,7 +59,7 @@ Wklejaj tylko w Edytorze kodu. Wklejony do zwykłego bloku „Własny HTML” pl
 ## Co później edytujesz ręcznie
 
 - **Pozycje w menu** są wpisane w pliku `2-wpcode-body.html`. Menu z **Wygląd → Menu** nie jest już używane. Zmianę pozycji menu robi się w tym pliku, a potem wkleja go ponownie w pole Body.
-- **Dane do wpłat, adres, maile** są wpisane w stronach i w stopce. Przy zmianie numeru konta trzeba poprawić `pomagam`, `kontakt`, `warsztaty` i stopkę (`3-wpcode-footer.html`).
+- **Dane do wpłat, adres, maile** są wpisane w stronach i w stopce. Przy zmianie numeru konta trzeba poprawić `pomagam`, `kontakt` i stopkę (`3-wpcode-footer.html`).
 - **Zdjęcia w nagłówkach stron** pokazują zwierzaki bez imion, więc nie dezaktualizują się, gdy podopieczni znajdą dom.
 - **Nowe dokumenty i sprawozdania**: wgraj PDF do mediów, skopiuj jego adres i dopisz nowy blok roku w `dokumenty.html`, wzorując się na istniejących.
 - **Tytuły i opisy dla Google** ustawiasz jak dotąd w polu Yoast SEO pod każdą stroną. Kod ich nie zmienia.
@@ -71,7 +68,7 @@ Wklejaj tylko w Edytorze kodu. Wklejony do zwykłego bloku „Własny HTML” pl
 ## Do sprawdzenia przez fundację (treści przeniesione bez zmian)
 
 - **Polityka prywatności** podaje stary adres: „ul. Za Torem 11, 44-203 Rybnik”. Reszta strony używa adresu „ul. św. Józefa 33A/B, 44-217 Rybnik”. Polityka wspomina też Google Analytics i Twitter, a na stronie nie ma ani jednego, ani drugiego.
-- **Regulamin warsztatów, §3 pkt 2**: literówka „bez opieki rodzina / opiekuna” (powinno być „rodzica”).
 - **Warunki adopcji**: stara strona miała pod spodem zepsuty pokaz zdjęć (`[metaslider id=935]`, wtyczka nie jest aktywna). Pominąłem go.
+- **Warsztaty** (strona, regulamin, standardy małoletnich, mail kreatywnypetpatrol) usunięte z nowego kodu. W WordPressie przenieś te strony do kosza / odpublikuj.
 - **Zostań wolontariuszem**: link „Więcej o bazarku TUTAJ” prowadził do obrazka PNG. Teraz prowadzi do sekcji Bazarek na stronie „Jak pomóc”.
 - **Stopka** zawiera numer zbiórki publicznej `2019/2190/OR` i drugie konto Instagram `pet.patrol.adopcje` (oba z materiałów kalendarza). Usuń je, jeśli są nieaktualne.
