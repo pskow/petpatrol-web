@@ -106,11 +106,26 @@ def banners(group):
     out = []
     for href, img, alt, contain in BANNERS[group]:
         cls = "ppw-banner ppw-banner--contain" if contain else "ppw-banner"
-        out.append(f'<a class="{cls}" href="{href}" target="_blank" rel="noopener"><img src="{UPLOADS}{img}" alt="{alt}" loading="lazy" width="768" height="192"></a>')
+        out.append(f'<a class="{cls}" href="{href}" target="_blank" rel="noopener" aria-label="{alt}"><img src="{UPLOADS}{img}" alt="{alt}" loading="lazy" width="768" height="192"></a>')
     return "".join(out)
 
 
+LINKS = """<section class="ppw-links ppw-bleed" aria-label="Wesprzyj fundację i znajdź nas">
+    <div class="ppw-wrap ppw-links__in">
+      <div class="ppw-links__group">
+        <h2 class="ppw-links__title">{{i:heart}} Wesprzyj fundację</h2>
+        <div class="ppw-banners ppw-banners--2">{{banners:support}}</div>
+      </div>
+      <div class="ppw-links__group">
+        <h2 class="ppw-links__title">{{i:paw}} Znajdź nas też tutaj</h2>
+        <div class="ppw-banners ppw-banners--3">{{banners:find}}</div>
+      </div>
+    </div>
+  </section>"""
+
+
 def render(text, media):
+    text = text.replace("{{links}}", LINKS)
     text = re.sub(r"\{\{i:([a-z]+)\}\}", lambda m: f'<span class="ppw-ico">{ICONS[m.group(1)]}</span>', text)
     text = re.sub(r"\{\{svg:([a-z]+)\}\}", lambda m: ICONS[m.group(1)], text)
     text = re.sub(r"\{\{banners:([a-z]+)\}\}", lambda m: banners(m.group(1)), text)
