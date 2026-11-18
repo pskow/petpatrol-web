@@ -77,7 +77,7 @@ ICONS = {
 BANNERS = {
     "support": [
         ("https://www.ratujemyzwierzaki.pl/pet-patrol-rybnik", "2026/08/ratujemy-zwierzaki-768x307.png", "Ratujemy Zwierzaki – zbiórka", True),
-        ("https://patronite.pl/petpatrolrybnik", "2026/08/patronite-768x192.png", "Patronite", False),
+        ("https://patronite.pl/petpatrolrybnik", "2026/08/patronite-768x192.png", "Patronite", True),
     ],
     "find": [
         ("https://www.olx.pl/oferty/uzytkownik/rC6dZ/", "2026/08/olx-ogloszenia-768x192.png", "OLX – ogłoszenia adopcyjne", False),
